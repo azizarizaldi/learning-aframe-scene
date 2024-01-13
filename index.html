@@ -12,8 +12,26 @@
             <audio id="space_audio" src="assets/space-audio.mp3"></audio>
         </a-assets>
 
+        <a-entity rotation="0 0 0" animation="property: rotation; to: 0 360 0; loop: true; dur: 5000">
+            <a-sphere position="3 3 0" color="blue"></a-sphere>
+        </a-entity>
+
+        <a-entity rotation="0 0 0" animation="property: rotation; to: 0 360 0; loop: true; dur: 5000">
+            <a-sphere position="0 3 3" color="red"></a-sphere>
+        </a-entity>
+
+        <a-entity id="mouseCursor" cursor="rayOrigin: mouse"></a-entity>
+
+        <a-entity
+          position="0 3 5"
+          geometry="primitive: box"
+          material="color: red"
+          animation__mouseenter="property: components.material.material.color; type: color; to: blue; startEvents: mouseenter; dur: 500";
+          animation__mouseleave="property: components.material.material.color; type: color; to: red; startEvents: mouseleave; dur: 500";>
+        </a-entity>
+
         <a-sound src="#space_audio" autoplay="true"></a-sound>
-        <a-entity camera position="-1.45 1.6 -6" wasd-controls look-controls></a-entity>
+        <a-entity camera position="0 1.6 0" wasd-controls look-controls></a-entity>
     </a-scene>
 </body>
 
