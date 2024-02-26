@@ -1,5 +1,5 @@
 ## VR Texture- Ring Solar Eclipse
-![Tampilan Awal](assets/images/preview-1.png)
+![Tampilan Awal](images/preview-1.png)
 
 Repo ini digunakan untuk belajar tentang scene VR menggunakan AFrame.io yang menampilkan
 sebuah contoh tour melihat beberapa planet yang ada di alam semesta.
